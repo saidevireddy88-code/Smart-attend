@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Online Attendance Management</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .submit-btn { margin-top: 20px; padding: 10px 20px; }
+    </style>
+</head>
+<body>
+    <h2>Attendance Management System</h2>
+    <form id="attendanceForm">
+        <table>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Present</th>
+                <th>Absent</th>
+            </tr>
+            <tr>
+                <td>CSMDAMBT10501</td>
+                <td>Student A</td>
+                <td><input type="radio" name="attendance1" value="Present"></td>
+                <td><input type="radio" name="attendance1" value="Absent"></td>
+            </tr>
+            <tr>
+                <td>CSMDAMBT10511</td>
+                <td>Student B</td>
+                <td><input type="radio" name="attendance2" value="Present"></td>
+                <td><input type="radio" name="attendance2" value="Absent"></td>
+            </tr>
+                       <tr>
+                <td>CSMDAMBT10514</td>
+                <td>Student C</td>
+                <td><input type="radio" name="attendance3" value="Present"></td>
+                <td><input type="radio" name="attendance3" value="Absent"></td>
+            </tr> 
+                        <tr>
+                <td>CSMDAMBT10505</td>
+                <td>Student D</td>
+                <td><input type="radio" name="attendance4" value="Present"></td>
+                <td><input type="radio" name="attendance4" value="Absent"></td>
+            </tr>
+                        <tr>
+                <td>CSMDAMBT10532</td>
+                <td>Student E</td>
+                <td><input type="radio" name="attendance5" value="Present"></td>
+                <td><input type="radio" name="attendance5" value="Absent"></td>
+            </tr><!-- Add more rows as needed -->
+        </table>
+        <button type="submit" class="submit-btn">Submit Attendance</button>
+    </form>
+
+    <script>
+        document.getElementById("attendanceForm").addEventListener("submit", function(e){
+            e.preventDefault();
+            alert("Attendance submitted successfully!");
+            // Here, use AJAX to send data to server or save locally
+        });
+    </script>
+</body>
+</html>
+This code provides a digital way for faculty to mark students as present or absent, helping to reduce manual errors and extra work. You can expand this by connecting it to a backend to save records and generate reports.
